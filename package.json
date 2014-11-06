@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "transpile": "node_modules/es6-transpiler/es6toes5 cat.js > cat.es5.js",
+    "transpile": "node --harmony node_modules/es6-transpiler/es6toes5.js cat.js > cat.es5.js",
     "test": "npm run transpile && mocha test/*.js -R mocha-istanbul"
   },
   "author": "",
