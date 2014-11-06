@@ -1,0 +1,19 @@
+{
+  "name": "cat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "node_modules/es6-transpiler/es6toes5 cat.js > cat.es5.js",
+    "test": "npm run transpile && mocha test/*.js -R mocha-istanbul"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "es6-transpiler": "^0.7.17",
+    "istanbul": "^0.3.2",
+    "mocha": "^2.0.1",
+    "mocha-istanbul": "^0.2.0"
+  }
+}
